@@ -17,7 +17,7 @@ name = arg[0];
 
 function results(result) {
    let birthday = (result.rows[0].birthdate).toLocaleDateString();
-    console.log("Found 1 person(s) by the name " +name);
+    console.log("Found " +result.rows.length+ " person(s) by the name " +name);
     console.log("- " +result.rows[0].id + ": " + result.rows[0].first_name, result.rows[0].last_name + ", born " +birthday);
 }
 
